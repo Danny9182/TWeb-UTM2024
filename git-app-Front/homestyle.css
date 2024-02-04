@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+h1, h2 {
+    color: #333;
+}
+
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+
+p {
+    color: #666;
+    line-height: 1.5;
+}
+
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.VaseaStyle {
+    color: #f723e2 !important;
+}
+
+p.VaseaStyle {
+    background-color: #32cd32;
+    color: #76cc76
+}
+
+.Background {
+    height: 400px;
+    width: 400px;
+    background-image: url("https://cdn.discordapp.com/attachments/574673752348950539/854322196926955550/paris_and_chill__part_4_5__by_bostonflows_del58i1.jpg?ex=65cb530c&is=65b8de0c&hm=5819dec5e87a258fbe0f162cfc5e7b0bdd7149d4bb92f8f06d45ac12ac33b771&");
+    background-size: cover;
+}
+
+.Background h2 {
+    color : red;
+    background-color: black;
+}
+
+.Background:hover {
+    background-image: url("https://cdn.discordapp.com/attachments/574673752348950539/711247656013398066/porsche_911_artwork_4k.jpg?ex=65d0d8ff&is=65be63ff&hm=9af8fa54677c34db73f58ba0f1f6ff89ae78ca75f710bffa246021a3e400612a&");
+}
+
+.Header2 {
+    color: rgba(255,255,255, 0.2) !important;
+    background: linear-gradient(#e66465, #9198e5);
+    -webkit-box-shadow: 13px 14px 48px 11px rgba(251,255,0,1);
+    -moz-box-shadow: 13px 14px 48px 11px rgba(251,255,0,1);
+    box-shadow: 13px 14px 48px 11px rgba(251,255,0,1);
+}
