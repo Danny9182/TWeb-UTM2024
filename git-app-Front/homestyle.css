@@ -1,80 +1,63 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+h1.TopTitle {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
+    display: flex;
 }
 
-
-header {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
+nav li {
+    margin: 0 1rem;
 }
 
-
-main {
-    padding: 20px;
+section .TopTitle {
 }
 
+.intro p {
+    margin-bottom: 2rem;
+    }
 
-h1, h2 {
-    color: #333;
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    text-align: left;
+    padding-top: 180px;
+    padding-left: 15%;
 }
 
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2b2b2b;
 }
 
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
+.intro p {
+    font-size: 1.75rem;
+    max-width: 60rem;
+    margin-bottom: 3rem;
+    text-align: left;
 }
 
-
-p {
-    color: #666;
-    line-height: 1.5;
-}
-
-
-footer {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-}
-
-.VaseaStyle {
-    color: #f723e2 !important;
-}
-
-p.VaseaStyle {
-    background-color: #32cd32;
-    color: #76cc76
-}
-
-.Background {
-    height: 400px;
-    width: 400px;
-    background-image: url("https://cdn.discordapp.com/attachments/574673752348950539/854322196926955550/paris_and_chill__part_4_5__by_bostonflows_del58i1.jpg?ex=65cb530c&is=65b8de0c&hm=5819dec5e87a258fbe0f162cfc5e7b0bdd7149d4bb92f8f06d45ac12ac33b771&");
+.headerBackground {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1204070214958841916/c128407b5b9f27e5faf5f737201b1ac8.jpg?ex=65d364c5&is=65c0efc5&hm=73aa8cd8a1990f486657b1a62eb8a65760cb20d81a3bda138c2cd37ce69b12cd&");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.Background h2 {
-    color : red;
-    background-color: black;
-}
-
-.Background:hover {
-    background-image: url("https://cdn.discordapp.com/attachments/574673752348950539/711247656013398066/porsche_911_artwork_4k.jpg?ex=65d0d8ff&is=65be63ff&hm=9af8fa54677c34db73f58ba0f1f6ff89ae78ca75f710bffa246021a3e400612a&");
-}
-
-.Header2 {
-    color: rgba(255,255,255, 0.2) !important;
-    background: linear-gradient(#e66465, #9198e5);
-    -webkit-box-shadow: 13px 14px 48px 11px rgba(251,255,0,1);
-    -moz-box-shadow: 13px 14px 48px 11px rgba(251,255,0,1);
-    box-shadow: 13px 14px 48px 11px rgba(251,255,0,1);
+body {
+    margin: 0;
+    padding-top: 0;
 }
