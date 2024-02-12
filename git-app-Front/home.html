@@ -6,7 +6,7 @@
     <title>Youngtimer Car</title>
     <link rel="stylesheet" href="homeStyle.css">
     <script src="prefabIncluder.js" defer></script>
-    
+    <script src="homeScript.js" defer></script>
 </head>
 <body>
 <header class="headerBackground">
@@ -36,21 +36,34 @@
             </div>
             <div class="description-image"></div>
         </div>
-        <div class="featured-cars-container">
-            <h2>Featured Cars</h2>
-            <div class="car">
-                <h3>Ferrari 488 GTB</h3>
-                <img src="" alt="Ferrari 488 GTB">
+        <section class="container-featured-cars featured-parent">
+            <div class="container-featured-cars">
+                <article class="container-cars-for-sale">
+                    <a href="">
+                        <div class="container-item-content">
+                            <h3>Cars for Sale</h3>
+                            <div class="featured-background"></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="container-coming-soon-cars">
+                    <a href="">
+                        <div class="container-item-content">
+                            <h3>Coming Soon</h3>
+                            <div class="featured-background"></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="container-sold-cars">
+                    <a href="">
+                        <div class="container-item-content">
+                            <h3>Sold</h3>
+                            <div class="featured-background"></div>
+                        </div>
+                    </a>
+                </article>
             </div>
-            <div class="car">
-                <h3>Lamborghini Aventador</h3>
-                <img src="" alt="Lamborghini Aventador">
-            </div>
-            <div class="car">
-                <h3>Bugatti Chiron</h3>
-                <img src="" alt="Bugatti Chiron">
-            </div>
-        </div>
+        </section>
     </section>
 </main>
 <div class="info-container" id="bottom"></div>
