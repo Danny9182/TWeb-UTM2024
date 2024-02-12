@@ -51,7 +51,6 @@ h1.topTitle {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-
 }
 
 .headerBackground::before {
@@ -62,6 +61,17 @@ h1.topTitle {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.headerBackground:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 88%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 94%);
+    pointer-events: none;
 }
 
 body {
@@ -127,6 +137,7 @@ body {
 
 .container-featured-cars article h3 {
     margin: 0;
+    text-align: center;
 }
 
 .container-featured-cars article a {
@@ -137,19 +148,20 @@ body {
 .featured-background {
     background-repeat: no-repeat;
     background-position: center;
-    width: 150px;
-    height: 250px;
+    width: 256px;
+    height: 170px;
     background-size: cover;
 }
 
 .container-item-content .featured-background {
-    background-image: url("https://cdn.discordapp.com/attachments/574673752348950539/574673938148360242/fiesta.jpg?ex=65db904f&is=65c91b4f&hm=007c63659806b86ba2176362e221d856edf2b68f0e2f31282e3408a55c05d882&");
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1206599733263597609/BMW-E28-Wallpaper-2048x1363-69958.jpg?ex=65dc9891&is=65ca2391&hm=c9ca2f1389b31d574c040d01c021ae83c951e003b296e3015d085cd63c4f4d10&");
 }
 
 .container-coming-soon-cars .featured-background {
-    background-image: url("https://cdn.discordapp.com/attachments/574673752348950539/711247656013398066/porsche_911_artwork_4k.jpg?ex=65da137f&is=65c79e7f&hm=30ac199a1d1ecaaae95993a76d5001cfeafbe4786962077c6dc8c633986fd206&");
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1206605477786689576/DSC02566-1024x683.jpg?ex=65dc9deb&is=65ca28eb&hm=651797f74cf64c7a4374d01475d3d3c22776cb4c6aa7fb3c70fa71a79941e8e2&");
 }
 
 .container-sold-cars .featured-background {
-    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/854959735706222592/unknown.png?ex=65d6df4d&is=65c46a4d&hm=4cfb66cfbcdcfe4fbc755481df29e37fe8b23b25a318d524d14a9bc0335e8bfc&")
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1206604269650845727/20221012-_R220769-1024x683.jpg?ex=65dc9ccb&is=65ca27cb&hm=7f12fb4cb81db8bdbec5d124c4c585d55b2e9c14454d58cd4c39214251430731&")
 }
+
