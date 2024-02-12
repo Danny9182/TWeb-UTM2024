@@ -110,7 +110,13 @@ body {
     display: inline-flex;
     justify-content: space-between;
     width: 80%;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 
+.container-featured-cars.featured-parent {
+    height: 450px;
+    
 }
 
 .container-featured-cars article {
@@ -128,3 +134,22 @@ body {
     color: inherit;
 }
 
+.featured-background {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 250px;
+    background-size: cover;
+}
+
+.container-item-content .featured-background {
+    background-image: url("https://cdn.discordapp.com/attachments/574673752348950539/574673938148360242/fiesta.jpg?ex=65db904f&is=65c91b4f&hm=007c63659806b86ba2176362e221d856edf2b68f0e2f31282e3408a55c05d882&");
+}
+
+.container-coming-soon-cars .featured-background {
+    background-image: url("https://cdn.discordapp.com/attachments/574673752348950539/711247656013398066/porsche_911_artwork_4k.jpg?ex=65da137f&is=65c79e7f&hm=30ac199a1d1ecaaae95993a76d5001cfeafbe4786962077c6dc8c633986fd206&");
+}
+
+.container-sold-cars .featured-background {
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/854959735706222592/unknown.png?ex=65d6df4d&is=65c46a4d&hm=4cfb66cfbcdcfe4fbc755481df29e37fe8b23b25a318d524d14a9bc0335e8bfc&")
+}
