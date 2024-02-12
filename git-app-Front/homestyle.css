@@ -1,20 +1,20 @@
-h1.topTitle { /* 1465460960 */
+h1.topTitle {
     text-align: center;
     font-size: 3rem;
     margin-top: 0;
     padding-top: 20px;
-    color: aliceblue;
     -webkit-filter: brightness(150%);
     filter: brightness(150%);
     text-shadow: 2px 2px black;
+    color: aliceblue;
 }
 
 .intro p {
     margin-bottom: 2rem;
-    color: aliceblue;
     -webkit-filter: brightness(150%);
     filter: brightness(150%);
     text-shadow: 2px 2px black;
+    color: aliceblue;
     }
 
 .intro {
@@ -24,10 +24,10 @@ h1.topTitle { /* 1465460960 */
     text-align: left;
     padding-top: 180px;
     padding-left: 15%;
-    color: aliceblue;
     -webkit-filter: brightness(150%);
     filter: brightness(150%);
     text-shadow: 2px 2px black;
+    color: aliceblue;
 }
 
 .intro h2 {
@@ -101,3 +101,29 @@ body {
 .description-text {
     width: 55%;
 }
+
+.container-featured-cars {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+    top: 30px;
+}
+
+.container-featured-cars article {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.container-featured-cars article h3 {
+    margin: 0;
+}
+
+.container-featured-cars article a {
+    text-decoration: none;
+    color: inherit;
+}
+
