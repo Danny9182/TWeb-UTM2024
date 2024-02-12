@@ -13,3 +13,11 @@ window.addEventListener("load", function() {
             });
         });
 });
+
+window.addEventListener("load", function() {
+    fetch('info.html')
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector('.info-container').innerHTML = data;
+        });
+});
