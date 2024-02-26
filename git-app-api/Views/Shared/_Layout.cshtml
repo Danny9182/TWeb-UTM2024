@@ -1,38 +1,12 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youngtimer Car</title>
-    <link rel="stylesheet" href="homeStyle.css">
-    <script src="prefabIncluder.js" defer></script>
-    <script src="homeScript.js" defer></script>
+    <title>YoungTimerCar</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/Scripts/js")
 </head>
-<body>
-
-
-    @RenderBody()
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com" target="_blank" class="social-link"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub"></a>
-                    <a href="https://twitter.com" target="_blank" class="social-link"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter"></a>
-                    <a href="https://youtube.com" target="_blank" class="social-link"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube"></a>
-                    <a href="https://facebook.com" target="_blank" class="social-link"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="Facebook"></a>
-                    <a href="https://instagram.com" target="_blank" class="social-link"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"></a>
-                </div>
-                <div class="footer-info">
-                    <p>&copy; 2024 Youngtimer Car</p>
-                    <p>Contact: info@youngtimer.com</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="info.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</body>
 </html>
+
+@RenderBody()

@@ -1,40 +1,35 @@
-﻿
-@{
-    ViewBag.Title = "Youngertimer Car";
+﻿@{
+    ViewBag.Title = "Home Page";
 }
 
-
+<link rel="stylesheet" href="../../Content/homeStyle.css" type="text/css">
+<body>
 <header class="headerBackground">
     <h1 class="topTitle">Youngtimer Car</h1>
-    <div class="navbar-container"></div>
+    <div class="navbar-container">
+        @Html.Partial("_Navbar")
+    </div>
     <section class="intro">
         <h2 class="topTitle">Welcome to Youngtimer Car</h2>
-        <p>
-            Explore our website to learn more about our services, our cars, and how
-            to book your perfect rental.
-        </p>
+        <p>Explore our website to learn more about our services, our cars, and how
+            to book your perfect rental.</p>
     </section>
 </header>
-
 <main>
     <section class="featured-cars">
         <div class="description-container">
             <div class="description-text">
                 <h1>Your Dream Awaits</h1>
-                <p>
-                    We are a company that is specializing on youngtimer and classic car
+                <p>We are a company that is specializing on youngtimer and classic car
                     rentals. Our fleet includes a wide range of cars from various eras,
                     perfect for any occasion. Now is the prime moment to acquire one of
                     these remarkable automobiles, sourced not only from Japan but also
-                    from Germany, England, USA, and Italy.
-                </p>
-                <p>
-                    Our expertise lies in providing cars from various regions, including
+                    from Germany, England, USA, and Italy.</p>
+                <p>Our expertise lies in providing cars from various regions, including
                     Japan, Germany, England, USA, and Italy, for both immediate purchase
                     and custom orders spanning several years. If your desired car isn't
                     in our current inventory, rest assured, we'll locate and procure the
-                    perfect vehicle for you directly from these countries.
-                </p>
+                    perfect vehicle for you directly from these countries.</p>
             </div>
             <div class="description-image"></div>
         </div>
@@ -68,3 +63,7 @@
         </section>
     </section>
 </main>
+<div class="info-container" id="bottom">
+        @Html.Partial("_About")
+    </div>
+</body>

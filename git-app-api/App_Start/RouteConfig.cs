@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Sandbox_Nr._1
+namespace git_app_api
 {
     public class RouteConfig
     {

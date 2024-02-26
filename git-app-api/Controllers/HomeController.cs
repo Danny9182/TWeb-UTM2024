@@ -4,14 +4,23 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Sandbox_Nr._1.Controllers
+namespace git_app_api.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult Navbar()
+        {
+            return PartialView("_Navbar");
+        }
+
+        public ActionResult Info()
+        {
+            return PartialView("_About");
         }
     }
 }
