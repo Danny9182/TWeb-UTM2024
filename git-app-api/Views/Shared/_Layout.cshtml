@@ -1,42 +1,71 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title>Youngtimer Car</title>
+    <link rel="stylesheet" href="homeStyle.css">
+    <script src="prefabIncluder.js" defer></script>
+    <script src="homeScript.js" defer></script>
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+<header class="headerBackground">
+    <h1 class="topTitle">Youngtimer Car</h1>
+    <div class="navbar-container"></div>
+    <section class="intro">
+        <h2 class="topTitle">Welcome to Youngtimer Car</h2>
+        <p>Explore our website to learn more about our services, our cars, and how
+            to book your perfect rental.</p>
+    </section>
+</header>
+<main>
+    <section class="featured-cars">
+        <div class="description-container">
+            <div class="description-text">
+                <h1>Your Dream Awaits</h1>
+                <p>We are a company that is specializing on youngtimer and classic car
+                    rentals. Our fleet includes a wide range of cars from various eras,
+                    perfect for any occasion. Now is the prime moment to acquire one of
+                    these remarkable automobiles, sourced not only from Japan but also
+                    from Germany, England, USA, and Italy.</p>
+                <p>Our expertise lies in providing cars from various regions, including
+                    Japan, Germany, England, USA, and Italy, for both immediate purchase
+                    and custom orders spanning several years. If your desired car isn't
+                    in our current inventory, rest assured, we'll locate and procure the
+                    perfect vehicle for you directly from these countries.</p>
+            </div>
+            <div class="description-image"></div>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("About", "About", "Home")</li>
-                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="container body-content">
-    @RenderBody()
-    <hr/>
-    <footer>
-        <p>&copy; @DateTime.Now.2024 - My ASP.NET Application</p>
-    </footer>
-</div>
-
-@Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/bootstrap")
-@RenderSection("scripts", required: false)
+        <section class="container-featured-cars featured-parent">
+            <div class="container-featured-cars">
+                <article class="container-cars-for-sale">
+                    <a href="">
+                        <div class="container-item-content">
+                            <h3>Cars for Sale</h3>
+                            <div class="featured-background"></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="container-coming-soon-cars">
+                    <a href="">
+                        <div class="container-item-content">
+                            <h3>Coming Soon</h3>
+                            <div class="featured-background"></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="container-sold-cars">
+                    <a href="">
+                        <div class="container-item-content">
+                            <h3>Sold</h3>
+                            <div class="featured-background"></div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </section>
+</main>
+<div class="info-container" id="bottom"></div>
 </body>
 </html>
