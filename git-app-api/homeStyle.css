@@ -1,0 +1,155 @@
+h1.topTitle {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+    padding-top: 20px;
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-shadow: 2px 2px black;
+    color: aliceblue;
+}
+
+.intro p {
+    margin-bottom: 2rem;
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-shadow: 2px 2px black;
+    color: aliceblue;
+    }
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    text-align: left;
+    padding-top: 180px;
+    padding-left: 15%;
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-shadow: 2px 2px black;
+    color: aliceblue;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+
+.intro p {
+    font-size: 1.75rem;
+    max-width: 60rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.headerBackground {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1204070214958841916/c128407b5b9f27e5faf5f737201b1ac8.jpg?ex=65d364c5&is=65c0efc5&hm=73aa8cd8a1990f486657b1a62eb8a65760cb20d81a3bda138c2cd37ce69b12cd&");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.headerBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    margin: 0;
+    padding-top: 0;
+}
+
+.featured-cars p ,.featured-cars h1 {
+    text-align: left;
+    padding-left: 15%;
+    font-size: 1.50rem;
+    max-width: 60rem;
+    margin-bottom: 3rem;
+
+}
+
+.description-container {
+    padding-top: 100px;
+    width: 94%;
+    display: flex;
+    padding-left: 6%;
+}
+
+.description-container h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.description-image {
+    width: 25%;
+    height: 65vh;
+    margin-left: 30px;
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1204569407855271976/Screenshot_2024-02-07_012831.png?ex=65d535ae&is=65c2c0ae&hm=9c811c5af627703f07903e71e015834ea52d26853104e40ecd09432d9a2618d7&");
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.description-text {
+    width: 55%;
+}
+
+.container-featured-cars {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.container-featured-cars.featured-parent {
+    height: 450px;
+    
+}
+
+.container-featured-cars article {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.container-featured-cars article h3 {
+    margin: 0;
+}
+
+.container-featured-cars article a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.featured-background {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 250px;
+    background-size: cover;
+}
+
+.container-item-content .featured-background {
+    background-image: url("https://cdn.discordapp.com/attachments/574673752348950539/574673938148360242/fiesta.jpg?ex=65db904f&is=65c91b4f&hm=007c63659806b86ba2176362e221d856edf2b68f0e2f31282e3408a55c05d882&");
+}
+
+.container-coming-soon-cars .featured-background {
+    background-image: url("https://cdn.discordapp.com/attachments/574673752348950539/711247656013398066/porsche_911_artwork_4k.jpg?ex=65da137f&is=65c79e7f&hm=30ac199a1d1ecaaae95993a76d5001cfeafbe4786962077c6dc8c633986fd206&");
+}
+
+.container-sold-cars .featured-background {
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/854959735706222592/unknown.png?ex=65d6df4d&is=65c46a4d&hm=4cfb66cfbcdcfe4fbc755481df29e37fe8b23b25a318d524d14a9bc0335e8bfc&")
+}
