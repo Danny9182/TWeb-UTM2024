@@ -1,0 +1,166 @@
+h1.topTitle {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+    padding-top: 20px;
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-shadow: 2px 2px black;
+    color: aliceblue;
+}
+
+.intro p {
+    margin-bottom: 2rem;
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-shadow: 2px 2px black;
+    color: aliceblue;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    text-align: left;
+    padding-top: 180px;
+    padding-left: 15%;
+    -webkit-filter: brightness(150%);
+    filter: brightness(150%);
+    text-shadow: 2px 2px black;
+    color: aliceblue;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+
+.intro p {
+    font-size: 1.75rem;
+    max-width: 60rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.headerBackground {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1204070214958841916/c128407b5b9f27e5faf5f737201b1ac8.jpg?ex=65e5d9c5&is=65d364c5&hm=ac24011818f32582d92178423985aec329b826801e1d3ee1cc84d7c72541d5d0&");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.headerBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.headerBackground:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 88%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 94%);
+    pointer-events: none;
+}
+
+body {
+    margin: 0;
+    padding-top: 0;
+}
+
+.featured-cars p ,.featured-cars h1 {
+    text-align: left;
+    padding-left: 15%;
+    font-size: 1.50rem;
+    max-width: 60rem;
+    margin-bottom: 3rem;
+
+}
+
+.description-container {
+    padding-top: 100px;
+    width: 94%;
+    display: flex;
+    padding-left: 6%;
+}
+
+.description-container h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.description-image {
+    width: 25%;
+    height: 65vh;
+    margin-left: 30px;
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1204569407855271976/Screenshot_2024-02-07_012831.png?ex=65e7aaae&is=65d535ae&hm=16123f1d473d7121fff6e018051437856c2b6f6f8d7fe085a79cf59ebc45518e&");
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.description-text {
+    width: 55%;
+}
+
+.container-featured-cars {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.container-featured-cars.featured-parent {
+    height: 450px;
+}
+
+.container-featured-cars article {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.container-featured-cars article h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.container-featured-cars article a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.featured-background {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 256px;
+    height: 170px;
+    background-size: cover;
+}
+
+.container-item-content .featured-background {
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1206599733263597609/BMW-E28-Wallpaper-2048x1363-69958.jpg?ex=65dc9891&is=65ca2391&hm=c9ca2f1389b31d574c040d01c021ae83c951e003b296e3015d085cd63c4f4d10&");
+}
+
+.container-coming-soon-cars .featured-background {
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1206605477786689576/DSC02566-1024x683.jpg?ex=65dc9deb&is=65ca28eb&hm=651797f74cf64c7a4374d01475d3d3c22776cb4c6aa7fb3c70fa71a79941e8e2&");
+}
+
+.container-sold-cars .featured-background {
+    background-image: url("https://cdn.discordapp.com/attachments/664136219655143427/1206604269650845727/20221012-_R220769-1024x683.jpg?ex=65dc9ccb&is=65ca27cb&hm=7f12fb4cb81db8bdbec5d124c4c585d55b2e9c14454d58cd4c39214251430731&")
+}

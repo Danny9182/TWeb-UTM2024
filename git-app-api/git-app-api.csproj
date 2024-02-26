@@ -6,7 +6,7 @@
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
         <SchemaVersion>2.0</SchemaVersion>
-        <ProjectGuid>{38B4A1BF-C134-463B-B2BD-33CF92A8E02D}</ProjectGuid>
+        <ProjectGuid>{38BE4D84-BDB1-4587-A0CB-0B5E2CC214FE}</ProjectGuid>
         <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -127,6 +127,9 @@
         <Content Include="Content\bootstrap-theme.min.css"/>
         <Content Include="Content\bootstrap.css"/>
         <Content Include="Content\bootstrap.min.css"/>
+        <Content Include="Content\homeStyle.css" />
+        <Content Include="Content\info.css" />
+        <Content Include="Content\navbar.css" />
         <Content Include="favicon.ico"/>
         <Content Include="fonts\glyphicons-halflings-regular.svg"/>
         <Content Include="Global.asax"/>
@@ -134,6 +137,7 @@
         <Content Include="Scripts\bootstrap.js"/>
         <Content Include="Scripts\bootstrap.min.js"/>
         <None Include="Scripts\jquery-3.3.1.intellisense.js"/>
+        <Content Include="Scripts\homeScript.js" />
         <Content Include="Scripts\jquery-3.3.1.js"/>
         <Content Include="Scripts\jquery-3.3.1.min.js"/>
         <Content Include="Scripts\jquery-3.3.1.slim.js"/>
@@ -144,6 +148,7 @@
         <Content Include="Scripts\jquery.validate.unobtrusive.js"/>
         <Content Include="Scripts\jquery.validate.unobtrusive.min.js"/>
         <Content Include="Scripts\modernizr-2.8.3.js"/>
+        <Content Include="Scripts\prefabIncluder.js" />
         <Content Include="Web.config"/>
         <Content Include="Web.Debug.config">
             <DependentUpon>Web.config</DependentUpon>
@@ -155,8 +160,8 @@
         <Content Include="Views\_ViewStart.cshtml"/>
         <Content Include="Views\Shared\Error.cshtml"/>
         <Content Include="Views\Shared\_Layout.cshtml"/>
-        <Content Include="Views\Home\About.cshtml"/>
-        <Content Include="Views\Home\Contact.cshtml"/>
+        <Content Include="Views\Home\_Navbar.cshtml" />
+        <Content Include="Views\Home\_About.cshtml" />
         <Content Include="Views\Home\Index.cshtml"/>
     </ItemGroup>
     <ItemGroup>

@@ -13,16 +13,14 @@ namespace git_app_api.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Navbar()
         {
-            ViewBag.Message = "Your application description page.";
-            return View();
+            return PartialView("_Navbar");
         }
 
-        public ActionResult Contact()
+        public ActionResult Info()
         {
-            ViewBag.Message = "Your contact page.";
-            return View();
+            return PartialView("_About");
         }
     }
 }
