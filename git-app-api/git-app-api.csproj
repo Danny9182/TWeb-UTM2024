@@ -117,9 +117,11 @@
         <Compile Include="App_Start\FilterConfig.cs"/>
         <Compile Include="App_Start\RouteConfig.cs"/>
         <Compile Include="Controllers\HomeController.cs"/>
+        <Compile Include="Controllers\LoginController.cs" />
         <Compile Include="Global.asax.cs">
             <DependentUpon>Global.asax</DependentUpon>
         </Compile>
+        <Compile Include="Models\UserLogin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>
@@ -149,6 +151,8 @@
         <Content Include="Scripts\jquery.validate.unobtrusive.min.js"/>
         <Content Include="Scripts\modernizr-2.8.3.js"/>
         <Content Include="Scripts\prefabIncluder.js" />
+        <Content Include="Views\Shared\_About.cshtml" />
+        <Content Include="Views\Shared\_Navbar.cshtml" />
         <Content Include="Web.config"/>
         <Content Include="Web.Debug.config">
             <DependentUpon>Web.config</DependentUpon>
@@ -160,13 +164,10 @@
         <Content Include="Views\_ViewStart.cshtml"/>
         <Content Include="Views\Shared\Error.cshtml"/>
         <Content Include="Views\Shared\_Layout.cshtml"/>
-        <Content Include="Views\Home\_Navbar.cshtml" />
-        <Content Include="Views\Home\_About.cshtml" />
         <Content Include="Views\Home\Index.cshtml"/>
     </ItemGroup>
     <ItemGroup>
         <Folder Include="App_Data"/>
-        <Folder Include="Models"/>
     </ItemGroup>
     <ItemGroup>
         <Content Include="fonts\glyphicons-halflings-regular.woff2"/>
@@ -180,6 +181,16 @@
         <None Include="packages.config"/>
         <Content Include="Scripts\jquery-3.3.1.slim.min.map"/>
         <Content Include="Scripts\jquery-3.3.1.min.map"/>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="BusinessLogic\BusinessLogic.csproj">
+        <Project>{99016309-57e4-4717-b3ea-8d501bc22fbd}</Project>
+        <Name>BusinessLogic</Name>
+      </ProjectReference>
+      <ProjectReference Include="Domain\Domain.csproj">
+        <Project>{16c7317f-834f-4e18-aef4-c1f2fce8db1c}</Project>
+        <Name>Domain</Name>
+      </ProjectReference>
     </ItemGroup>
     <PropertyGroup>
         <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
