@@ -44,7 +44,7 @@ namespace git_app_api.Controllers
                 }
                 else
                 {
-                    //ModelState.AddModelError("", userLogin);
+                    //ModelState.AddModelError("", userLogin); wip
                     return null;
                 }
             }
